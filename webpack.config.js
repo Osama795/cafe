@@ -84,34 +84,11 @@ module.exports = {
         template: "./src/index.html",
         filename: "index.html"
         }),
-        // new HtmlWebpackPlugin({
-        // template: "./src/projects.html",
-        // filename: "projects.html"
-        // }),
-        // new HtmlWebpackPlugin({
-        // template: "./src/about.html",
-        // filename: "about.html"
-        // }),
-        // new HtmlWebpackPlugin({
-        // template: "./src/project-details.html",
-        // filename: "project-details.html"
-        // }),
-        // new HtmlWebpackPlugin({
-        // template: "./src/blog.html",
-        // filename: "blog.html"
-        // }),
-        // new HtmlWebpackPlugin({
-        // template: "./src/blog-details.html",
-        // filename: "blog-details.html"
-        // }),
-        // new HtmlWebpackPlugin({
-        // template: "./src/add-blog.html",
-        // filename: "add-blog.html"
-        // }),
-        // new HtmlWebpackPlugin({
-        // template: "./src/contact.html",
-        // filename: "contact.html"
-        // }),
+        new HtmlWebpackPlugin({
+        template: "./src/about.html",
+        filename: "about.html"
+        }),
+
         new MiniCssExtractPlugin({ filename: "css/style.css" })
     ],
 };
