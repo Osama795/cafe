@@ -1,0 +1,369 @@
+@import './_variable.scss';
+
+
+@font-face {
+    font-family: "cairoFont";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "cairoFont", 'Cambria, Cochin, Georgia, Times, Times New Roman, serif' !important;
+    // height: 10000px;
+}
+
+/* ========== Start Global  ========== */
+.custom-btn {
+    color: $third-color;
+    background-color: $main-color;
+    border-color: $main-color;
+    &:hover , &:active, &:focus &:active:focus, &:active:hover {
+        background-color: $four-color;
+        border-color: $four-color;
+    }
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(51,33,29,0.7);
+    // z-index: 1;
+}
+.main-title {
+    color: $second-color;
+    font-size: 45px;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: 20px auto 60px;
+    &::before {
+        content: "";
+        height: 2px;
+        width: 80%;
+        border: 1px solid $second-color;
+        position: absolute;
+        bottom: -20px;
+        // right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &::after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        border: 2px solid $second-color;
+        border-radius: 50%;
+        background: #da9f52;
+        position: absolute;
+        bottom: -27px;
+        /* right: 50%; */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.carousel-indicators {
+    bottom: -70px;
+   & [data-bs-target] {
+        width: 20px !important;
+        height: 20px !important;
+        border-radius: 50% !important;
+        background-color: $second-color;
+    }
+    & .active {
+        background-color: $main-color;
+        // width: 40px !important;
+        // height: 20px !important;
+        // border-radius: 15px !important;
+    }
+}
+/* ========== End Global  ========== */
+/* ========== Start header ========== */
+header {
+    .navbar {
+        background: transparent;
+        z-index: 9999;
+        padding: 3px;
+        position:absolute;
+        width: 100%;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+        @media (max-width:992px) {
+            background: wheat;
+        }
+        &.fixed {
+            position: fixed;
+            width: 100%;
+            background: wheat;
+        }
+        .navbar-brand {
+            color: $four-color;
+            // background-color: wheat;
+            img {
+                width: 50px;
+            }
+        }
+        .navbar-toggler {
+            svg {
+                color: wheat;
+            }
+        }
+        .navbar-nav {
+            .nav-item {
+                margin: 0 8px;
+                .nav-link {
+                    font-weight: 600;
+                    color: white;
+                    &.active, &:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+        .cart-shop {
+            padding: 5px 10px;
+            color: $main-color;
+            border: 1px solid $main-color;
+            background-color: transparent;
+            border-radius: 2px;
+            font-size: 14px;
+            // margin-right: 15px;
+            &:hover {
+                background-color: $main-color;
+                color: white;
+            }
+        }
+    }
+
+    .landing {
+        .carousel {
+            img {
+                height: calc(100vh - 0px);
+            }
+            .carousel-item {
+                .carousel-caption {
+                    z-index: 2;
+                    padding-top: 30px;
+                    padding-bottom: 20px;
+                    color: #fff;
+                    text-align: center;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+/* ========== End header ========== */
+/* ========== Start Services ========== */
+.services {
+    .card {
+        overflow: hidden;
+        img {
+            height: 232px;
+        }
+        .card-img-overlay {
+            .serv-title {
+                svg {
+                    font-size: 50px;
+                }
+                .card-title {
+                    font-weight: 600;
+                    color: $main-color !important;
+                }
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+/* ========== End Services ========== */
+/* ========== Start Products ========== */
+.products {
+    .carousel-item {
+        .card {
+            overflow: hidden;
+            .card-body {
+                .custom-btn {
+                    font-size: smaller;
+                }
+            }
+            img {
+                transition: $main-Transition
+            }
+            &:hover {
+                img {
+                    -webkit-transform:scale(1.05);
+                    -moz-transform:scale(1.05);
+                    transform:scale(1.05)
+                }
+            }
+        }
+    }
+    
+    .carousel-indicators {
+        bottom: -60px;
+       & [data-bs-target] {
+            width: 20px !important;
+            height: 20px !important;
+            border-radius: 50% !important;
+            background-color: $second-color;
+        }
+        & .active {
+            background-color: $main-color;
+            // width: 40px !important;
+            // height: 20px !important;
+            // border-radius: 15px !important;
+        }
+    }
+}
+/* ========== End Products ========== */
+/* ========== Start Reservation ========== */
+.reservation {
+    background: linear-gradient(rgba(51, 33, 29, .9), rgba(51, 33, 29, .9)), url(../images/bg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+        color: $main-color;
+    }
+    ul {
+        li{
+            svg {
+                color: $main-color;
+            }
+        }
+    }
+    
+    .form-section {
+        background: $second-color;
+        form {
+            input, select {
+                color: $main-color;
+                border-color: $main-color !important;
+                border-radius: 0;
+                width: 100%;
+                // padding: 15px;
+                &::placeholder {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}
+/* ========== End Reservation ========== */
+/* ========== Start Review ========== */
+.review {
+    .item {
+        // margin-left: 50%;
+        // -webkit-transform: translateX(-50%);
+        // -moz-transform: translateX(-50%);
+        // -o-transform: translateX(-50%);
+        // transform: translateX(-50%);
+        position: relative;
+        // background-color: $second-color;
+        -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+        -moz-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+        -o-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $main-color;
+            border: 2px solid $main-color; 
+        }
+        h5 { color: $main-color;}
+        svg {
+            color: $main-color;
+            font-size: 65px;
+            position: absolute;
+            left: 40px;
+            bottom: 20px;
+        }
+    }
+}
+/* ========== End Review ========== */
+/* ========== Start Footer ========== */
+footer {
+    margin-top: 100px !important;
+    position: relative;
+    // background-color: wheat;
+    background-color: #fffbf2;
+    .footer-nav {
+        padding: 50px 0 40px;
+        .footer-logo {
+            img {
+                width: 80px;
+            }
+        }
+        .footer-nav-links {
+            margin: 30px 0;
+            a {
+                color: $second-color;
+                margin-left: 30px;
+                font-weight: bold;
+                text-decoration: none !important;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
+        .newsletter {
+            border-top: 1px solid $second-color;
+            color: $second-color;
+            margin: auto;
+            form {
+                width: 90%;
+                label {
+                    margin: 30px 0 16px;
+                    font-weight: 600;
+                }
+                input {
+                    // background-color: $bg-color;
+                    background-color: $main-color;
+                    opacity: .6;
+                    border: none;
+                    border-radius: 0;
+                    height: 38px;
+                }
+                button {
+                    border-radius: 0;
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                    font-size: 14px;
+                    padding: 6px 12px 5px;
+                    color: inherit;
+                    height: 38px;
+                }
+            }
+        }
+    }
+    .footer-copyright-social {
+        // background-color: darken($color: wheat, $amount: 5);
+        background-color: darken($color: #fffbf2, $amount: 3);
+        color: $second-color;
+        padding: 30px 0;
+        font-weight: 700;
+       @media (max-width: 768px) {
+        .copyright {
+            margin-bottom: 20px;
+        }
+       }
+        a {
+            color: $second-color;
+            margin: 0 5px;
+            text-decoration: none;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}
+/* ========== End Footer ========== */
