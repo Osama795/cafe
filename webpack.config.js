@@ -88,6 +88,30 @@ module.exports = {
         template: "./src/about.html",
         filename: "about.html"
         }),
+        new HtmlWebpackPlugin({
+        template: "./src/contact.html",
+        filename: "contact.html"
+        }),
+        new HtmlWebpackPlugin({
+        template: "./src/services.html",
+        filename: "services.html"
+        }),
+        new HtmlWebpackPlugin({
+        template: "./src/reviews.html",
+        filename: "reviews.html"
+        }),
+        new HtmlWebpackPlugin({
+        template: "./src/reservation.html",
+        filename: "reservation.html"
+        }),
+        new HtmlWebpackPlugin({
+        template: "./src/distributors.html",
+        filename: "distributors.html"
+        }),
+        new HtmlWebpackPlugin({
+        template: "./src/product-details.html",
+        filename: "product-details.html"
+        }),
 
         new MiniCssExtractPlugin({ filename: "css/style.css" })
     ],

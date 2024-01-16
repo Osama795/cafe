@@ -18,19 +18,19 @@
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                   <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a></li>
                   <li class="nav-item"> <a class="nav-link" href="about.html">حول الشركة</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#">الخدمات</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="#">الموزعين</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="services.html">الخدمات</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="distributors.html">الموزعين</a></li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       صفحات
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">حجز</a></li>
+                      <li><a class="dropdown-item" href="reservation.html">حجز</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">اراء العملاء</a></li>
+                      <li><a class="dropdown-item" href="reviews.html">اراء العملاء</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item"> <a class="nav-link" href="#">اتصل بنا</a></li>      
+                  <li class="nav-item"> <a class="nav-link" href="contact.html">اتصل بنا</a></li>      
                 </ul>
                 <!-- <a href="#" class="btn custom-btn">احجز طاولة</a> -->
                 <a href="#" class="btn cart-shop mx-3 px-3" title="عربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -157,15 +157,15 @@
       <!--------------------- Start Products---------------------->
       <section class="products py-5">
         <div class="container">
-          <h2 class="main-title">المنتجات</h2>
-          <div class="row">
-            <div id="carouselExampleIndicators" class="carousel slide">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
+          <h2 class="main-title text-right">المنتجات</h2>
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="items-box pt-5">
                 <div class="carousel-item active">
                   <div class="row">
                     <div class="col-md-4 col-lg-3">
@@ -176,9 +176,8 @@
                             <h5 class="card-title float-end">الكابتشينو</h5>
                             <div class="price float-start">200$</div>
                           </div>
-                          <!-- <p class="card-text">هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون، توجد في المقاهي وتزين بأنواع من التزيينات مثل الرغوة أو الكريمة...</p> -->
                           <div class="d-flex justify-content-center align-items-center gap-3">
-                            <a href="#" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
+                            <a href="product-details.html" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
                             <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
                           </div>
                           
@@ -194,9 +193,8 @@
                             <h5 class="card-title float-end">القهوة</h5>
                             <div class="price float-start">100$</div>
                           </div>
-                          <!-- <p class="card-text">هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون، توجد في المقاهي وتزين بأنواع من التزيينات مثل الرغوة أو الكريمة...</p> -->
                           <div class="d-flex justify-content-center align-items-center gap-3">
-                            <a href="#" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
+                            <a href="product-details.html" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
                             <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
                           </div>
                           
@@ -212,9 +210,8 @@
                             <h5 class="card-title float-end">الكابتشينو</h5>
                             <div class="price float-start">200$</div>
                           </div>
-                          <!-- <p class="card-text">هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون، توجد في المقاهي وتزين بأنواع من التزيينات مثل الرغوة أو الكريمة...</p> -->
                           <div class="d-flex justify-content-center align-items-center gap-3">
-                            <a href="#" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
+                            <a href="product-details.html" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
                             <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
                           </div>
                           
@@ -230,9 +227,8 @@
                             <h5 class="card-title float-end">القهوة</h5>
                             <div class="price float-start">100$</div>
                           </div>
-                          <!-- <p class="card-text">هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون، توجد في المقاهي وتزين بأنواع من التزيينات مثل الرغوة أو الكريمة...</p> -->
                           <div class="d-flex justify-content-center align-items-center gap-3">
-                            <a href="#" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
+                            <a href="product-details.html" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
                             <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
                           </div>
                           
@@ -241,116 +237,37 @@
                     </div>
 
                   </div>
+        
                 </div>
-
                 <div class="carousel-item">
                   <div class="row">
-                    <div class="col-md-4 col-lg-3">
-                      <div class="card mb-3">
-                        <img src="./images/Cappuccino-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <div class="clearfix">
-                            <h5 class="card-title float-end">الكابتشينو</h5>
-                            <div class="price float-start">200$</div>
-                          </div>
-                          <!-- <p class="card-text">هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون، توجد في المقاهي وتزين بأنواع من التزيينات مثل الرغوة أو الكريمة...</p> -->
-                          <div class="d-flex justify-content-center align-items-center gap-3">
-                            <a href="#" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
-                            <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="col-md-4 col-lg-3">
-                      <div class="card mb-3">
-                        <img src="./images/coffee-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <div class="clearfix">
-                            <h5 class="card-title float-end">القهوة</h5>
-                            <div class="price float-start">100$</div>
-                          </div>
-                          <!-- <p class="card-text">هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون، توجد في المقاهي وتزين بأنواع من التزيينات مثل الرغوة أو الكريمة...</p> -->
-                          <div class="d-flex justify-content-center align-items-center gap-3">
-                            <a href="#" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
-                            <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 col-lg-3">
-                      <div class="card mb-3">
-                        <img src="./images/Turkish-1.jpg" class="card-img-top" alt="Turkish">
-                        <div class="card-body">
-                          <div class="clearfix">
-                            <h5 class="card-title float-end">القهوة التركية </h5>
-                            <div class="price float-start">200$</div>
-                          </div>
-                          <!-- <p class="card-text">هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون، توجد في المقاهي وتزين بأنواع من التزيينات مثل الرغوة أو الكريمة...</p> -->
-                          <div class="d-flex justify-content-center align-items-center gap-3">
-                            <a href="#" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
-                            <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 col-lg-3">
-                      <div class="card mb-3">
-                        <img src="./images/Turkish-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <div class="clearfix">
-                            <h5 class="card-title float-end">القهوة التركية </h5>
-                            <div class="price float-start">100$</div>
-                          </div>
-                          <!-- <p class="card-text">هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون، توجد في المقاهي وتزين بأنواع من التزيينات مثل الرغوة أو الكريمة...</p> -->
-                          <div class="d-flex justify-content-center align-items-center gap-3">
-                            <a href="#" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
-                            <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-4 col-lg-3">
-                      <div class="card mb-3">
-                        <img src="./images/Turkish-3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <div class="clearfix">
-                            <h5 class="card-title float-end">القهوة التركية </h5>
-                            <div class="price float-start">300$</div>
-                          </div>
-                          <!-- <p class="card-text">هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون، توجد في المقاهي وتزين بأنواع من التزيينات مثل الرغوة أو الكريمة...</p> -->
-                          <div class="d-flex justify-content-center align-items-center gap-3">
-                            <a href="#" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
-                            <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    
                     <div class="col-md-4 col-lg-3">
                       <div class="card mb-3">
                         <img src="./images/Cappuccino-1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <div class="clearfix">
+                            <h5 class="card-title float-end">الكابتشينو</h5>
+                            <div class="price float-start">200$</div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <a href="product-details.html" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
+                            <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-lg-3">
+                      <div class="card mb-3">
+                        <img src="./images/coffee-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="clearfix">
                             <h5 class="card-title float-end">القهوة</h5>
                             <div class="price float-start">100$</div>
                           </div>
-                          <!-- <p class="card-text">هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون، توجد في المقاهي وتزين بأنواع من التزيينات مثل الرغوة أو الكريمة...</p> -->
                           <div class="d-flex justify-content-center align-items-center gap-3">
-                            <a href="#" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
+                            <a href="product-details.html" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
                             <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
                           </div>
                           
@@ -360,33 +277,31 @@
 
                     <div class="col-md-4 col-lg-3">
                       <div class="card mb-3">
-                        <img src="./images/cafe-4.jpg" class="card-img-top" alt="...">
+                        <img src="./images/Cappuccino-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="clearfix">
+                            <h5 class="card-title float-end">الكابتشينو</h5>
+                            <div class="price float-start">200$</div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <a href="product-details.html" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
+                            <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3">
+                      <div class="card mb-3">
+                        <img src="./images/coffee-2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                           <div class="clearfix">
                             <h5 class="card-title float-end">القهوة</h5>
-                            <div class="price float-start">200$</div>
+                            <div class="price float-start">100$</div>
                           </div>
-                          <!-- <p class="card-text">هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون، توجد في المقاهي وتزين بأنواع من التزيينات مثل الرغوة أو الكريمة...</p> -->
                           <div class="d-flex justify-content-center align-items-center gap-3">
-                            <a href="#" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
-                            <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 col-lg-3">
-                      <div class="card mb-3">
-                        <img src="./images/Turkish-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <div class="clearfix">
-                            <h5 class="card-title float-end">القهوة التركية </h5>
-                            <div class="price float-start">300$</div>
-                          </div>
-                          <!-- <p class="card-text">هو نوع من أنواع القهوة التي يمزج معها الحليب وقد اخترعها الإيطاليون، توجد في المقاهي وتزين بأنواع من التزيينات مثل الرغوة أو الكريمة...</p> -->
-                          <div class="d-flex justify-content-center align-items-center gap-3">
-                            <a href="#" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
+                            <a href="product-details.html" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
                             <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
                           </div>
                           
@@ -395,19 +310,83 @@
                     </div>
 
                   </div>
+        
                 </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4 col-lg-3">
+                      <div class="card mb-3">
+                        <img src="./images/Cappuccino-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="clearfix">
+                            <h5 class="card-title float-end">الكابتشينو</h5>
+                            <div class="price float-start">200$</div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <a href="product-details.html" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
+                            <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-lg-3">
+                      <div class="card mb-3">
+                        <img src="./images/coffee-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="clearfix">
+                            <h5 class="card-title float-end">القهوة</h5>
+                            <div class="price float-start">100$</div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <a href="product-details.html" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
+                            <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
 
+                    <div class="col-md-4 col-lg-3">
+                      <div class="card mb-3">
+                        <img src="./images/Cappuccino-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="clearfix">
+                            <h5 class="card-title float-end">الكابتشينو</h5>
+                            <div class="price float-start">200$</div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <a href="product-details.html" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
+                            <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3">
+                      <div class="card mb-3">
+                        <img src="./images/coffee-2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <div class="clearfix">
+                            <h5 class="card-title float-end">القهوة</h5>
+                            <div class="price float-start">100$</div>
+                          </div>
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <a href="product-details.html" class="btn custom-btn float-end" title="عرض التفاصيل" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-regular fa-eye"></i></a>
+                            <button class="btn custom-btn float-start" title="اضافة لعربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-cart-plus"></i></button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+        
+                </div>
               </div>
-              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button> -->
             </div>
-            
           </div>
         </div>
       </section>
@@ -458,7 +437,7 @@
                                 </div>
                                 
                                 <div>
-                                    <button class="btn custom-btn btn-block font-weight-bold py-3 w-100" type="submit">احجز الان</button>
+                                    <button class="btn custom-btn btn-block font-weight-bold py-3 w-100 rounded-0" type="submit">احجز الان</button>
                                 </div>
                             </form>
                         </div>
@@ -466,105 +445,138 @@
                 </div>
             </div>
         </div>
-    </div>
+      </div>
     <!--------------------- End Reservation ---------------------->
 
-      <!--------------------- Start Review ---------------------->
-    <section class="review py-5" id="review">
-      <div class="container">
-        <h2 class="main-title">اراء العملاء</h2>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <!--------------------- Start Review ---------------------->
+  <section class="review py-5" id="review">
+  <div class="container">
+    <h2 class="main-title">اراء العملاء</h2>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="items-box pt-5">
+          <div class="carousel-item active">
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="item w-100 mb-5 p-4">
+                    <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
+                    <div class="person-info d-flex align-items-center gap-4 mt-3">
+                      <img class="img-fluid" src="./images/person_1.png" alt="person" />
+                      <div><h5>الاسم</h5></div>
+                    </div>
+                    <i class="fa-solid fa-quote-right quote"></i>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="item w-100 mb-5 p-4">
+                    <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
+                    <div class="person-info d-flex align-items-center gap-4 mt-3">
+                      <img class="img-fluid" src="./images/person_2.jpg" alt="person" />
+                      <div><h5>الاسم</h5></div>
+                    </div>
+                    <i class="fa-solid fa-quote-right quote"></i>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="item w-100 mb-5 p-4">
+                    <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
+                    <div class="person-info d-flex align-items-center gap-4 mt-3">
+                      <img class="img-fluid" src="./images/person_2.jpg" alt="person" />
+                      <div><h5>الاسم</h5></div>
+                    </div>
+                    <i class="fa-solid fa-quote-right quote"></i>
+                  </div>
+                </div>
+            </div>
+  
           </div>
-          <div class="carousel-inner">
-            <div class="items-box pt-5">
-              <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-md-6">
-                      <div class="item w-100 mb-5 p-4">
-                        <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
-                        <div class="person-info d-flex align-items-center gap-4 mt-3">
-                          <img class="img-fluid" src="./images/person_1.png" alt="person" />
-                          <div><h5>الاسم</h5></div>
-                        </div>
-                        <i class="fa-solid fa-quote-right quote"></i>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <div class="item w-100 mb-5 p-4">
-                        <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
-                        <div class="person-info d-flex align-items-center gap-4 mt-3">
-                          <img class="img-fluid" src="./images/person_2.jpg" alt="person" />
-                          <div><h5>الاسم</h5></div>
-                        </div>
-                        <i class="fa-solid fa-quote-right quote"></i>
-                      </div>
-                    </div>
-                </div>
-      
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="item w-100 mb-5 p-4">
-                      <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
-                      <div class="person-info d-flex align-items-center gap-4 mt-3">
-                        <img class="img-fluid" src="./images/person_3.jpg" alt="person" />
-                        <div><h5>الاسم</h5></div>
-                      </div>
-                      <i class="fa-solid fa-quote-right quote"></i>
-                    </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="item w-100 mb-5 p-4">
+                  <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
+                  <div class="person-info d-flex align-items-center gap-4 mt-3">
+                    <img class="img-fluid" src="./images/person_3.jpg" alt="person" />
+                    <div><h5>الاسم</h5></div>
                   </div>
-
-                  <div class="col-md-6">
-                    <div class="item w-100 mb-5 p-4">
-                      <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
-                      <div class="person-info d-flex align-items-center gap-4 mt-3">
-                        <img class="img-fluid" src="./images/person_4.jpg" alt="person" />
-                        <div><h5>الاسم</h5></div>
-                      </div>
-                      <i class="fa-solid fa-quote-right quote"></i>
-                    </div>
-                  </div>
+                  <i class="fa-solid fa-quote-right quote"></i>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="item w-100 mb-5 p-4">
-                      <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
-                      <div class="person-info d-flex align-items-center gap-4 mt-3">
-                        <img class="img-fluid" src="./images/person_1.png" alt="person" />
-                        <div><h5>الاسم</h5></div>
-                      </div>
-                      <i class="fa-solid fa-quote-right quote"></i>
-                    </div>
-                  </div>
 
-                  <div class="col-md-6">
-                    <div class="item w-100 mb-5 p-4">
-                      <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
-                      <div class="person-info d-flex align-items-center gap-4 mt-3">
-                        <img class="img-fluid" src="./images/person_1.png" alt="person" />
-                        <div><h5>الاسم</h5></div>
-                      </div>
-                      <i class="fa-solid fa-quote-right quote"></i>
+              <div class="col-md-4">
+                <div class="item w-100 mb-5 p-4">
+                  <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
+                  <div class="person-info d-flex align-items-center gap-4 mt-3">
+                    <img class="img-fluid" src="./images/person_4.jpg" alt="person" />
+                    <div><h5>الاسم</h5></div>
+                  </div>
+                  <i class="fa-solid fa-quote-right quote"></i>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="item w-100 mb-5 p-4">
+                    <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
+                    <div class="person-info d-flex align-items-center gap-4 mt-3">
+                      <img class="img-fluid" src="./images/person_2.jpg" alt="person" />
+                      <div><h5>الاسم</h5></div>
                     </div>
+                    <i class="fa-solid fa-quote-right quote"></i>
                   </div>
                 </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="item w-100 mb-5 p-4">
+                  <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
+                  <div class="person-info d-flex align-items-center gap-4 mt-3">
+                    <img class="img-fluid" src="./images/person_1.png" alt="person" />
+                    <div><h5>الاسم</h5></div>
+                  </div>
+                  <i class="fa-solid fa-quote-right quote"></i>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="item w-100 mb-5 p-4">
+                  <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
+                  <div class="person-info d-flex align-items-center gap-4 mt-3">
+                    <img class="img-fluid" src="./images/person_1.png" alt="person" />
+                    <div><h5>الاسم</h5></div>
+                  </div>
+                  <i class="fa-solid fa-quote-right quote"></i>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                  <div class="item w-100 mb-5 p-4">
+                    <q class="lh-lg mt-2">لوريم إيبسوم هو نص مؤقت يستخدم في التصميم والنشر لإظهار شكل الوثيقة أو الخط دون الاعتماد على محتوى معنوي. قد يستخدم لوريم إيبسوم كنص بديل قبل وضع النص النهائي المطلوب للتصميم. كما يستخدم لإخفاء النص في عملية تسمى بالتغريق.</q>
+                    <div class="person-info d-flex align-items-center gap-4 mt-3">
+                      <img class="img-fluid" src="./images/person_2.jpg" alt="person" />
+                      <div><h5>الاسم</h5></div>
+                    </div>
+                    <i class="fa-solid fa-quote-right quote"></i>
+                  </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-      <!--------------------- End Review---------------------->
+    </div>
+  </div>
+  </section>
+  <!--------------------- End Review ---------------------->
     </main>
-    <!--------------------- Start Footer---------------------->
+    <!--------------------- Start Footer ---------------------->
     <footer>
       <!-- <div class="overlay"></div> -->
         <div class="footer-nav text-center">
@@ -602,6 +614,15 @@
         </div>
       </div> 
     </footer>
-    <!--------------------- End Footer---------------------->
+    <!--------------------- End Footer ---------------------->
+
+
+    <!--------------------- Start Scroll Top ---------------------->
+    <div class="scroll-top custom-btn">
+      <!-- <i class="fa-solid fa-arrow-up"></i> -->
+      <i class="fa fa-angle-double-up"></i>
+    </div>
+    <!--------------------- End Scroll Top ---------------------->
+
 </body>
 </html>

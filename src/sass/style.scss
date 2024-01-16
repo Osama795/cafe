@@ -1,10 +1,21 @@
 @import './_variable.scss';
 
-
+// @font-face {
+//     font-family: "cairoFont";
+//     src: url(../fonts/Cairo-Regular.ttf);
+// }
 @font-face {
-    font-family: "cairoFont";
-    src: url(../fonts/Cairo-Regular.ttf);
+    font-family: "TajawalFont";
+    // src: url(../fonts/Tajawal Regularr.ttf);
+    src: url(../fonts/Tajawal-Regular.ttf);
 }
+
+:root {
+    --bs-link-color: #333;
+    --bs-emphasis-color: #da9f5b;
+    --bs-link-hover-color: #555;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -13,10 +24,12 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-    font-family: "cairoFont", 'Cambria, Cochin, Georgia, Times, Times New Roman, serif' !important;
-    // height: 10000px;
+    // font-family: "cairoFont", 'Cambria, Cochin, Georgia, Times, Times New Roman, serif' !important;
+    font-family: "TajawalFont", 'Cambria, Cochin, Georgia, Times, Times New Roman, serif' !important;
 }
+
 a {text-decoration: none;}
 /* ========== Start Global  ========== */
 .custom-btn {
@@ -85,19 +98,21 @@ a {text-decoration: none;}
     }
 }
 .breadcrumb {
-    a {
-        color: $second-color;
-    }
     .breadcrumb-item {
        &::before {
             color: $bg-color;
             float: right !important;
             padding-left: 0.5rem;;
-            // color: rgba($second-color, .5);
         }
-        font-size: 23px;
+        font-size: 20px;
         &.active {
             color: $second-color
+        }
+        a {
+            color: $second-color;
+            &:hover {
+                color: $four-color !important;
+            }
         }
     }
 }
@@ -110,21 +125,23 @@ a {text-decoration: none;}
 } 
 /* ========== End Global  ========== */
 
-/* =================================
-=========== The Main Page ===========
-/* =================================*/
+/* =====================================================================================
+    ================================ Main Page ==========================================
+/* =====================================================================================*/
 
 /* ========== Start header ========== */
 header {
     .navbar {
         background: transparent;
+        // background: wheat;
         z-index: 9999;
         padding: 3px;
         position:absolute;
         width: 100%;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
         @media (max-width:992px) {
-            background: wheat;
+            // background: wheat;
+            background: $second-color;
         }
         &.fixed {
             position: fixed;
@@ -151,6 +168,23 @@ header {
                     color: white;
                     &.active, &:hover {
                         color: $main-color;
+                    }
+                }
+                .dropdown-menu {
+                    padding: 0;
+                    border-radius: 0;
+                    .dropdown-item {
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        text-align: right;
+                        &.active, &:focus, &.active:focus {
+                            background-color: wheat;
+                            color: $second-color;
+                        }
+                    }
+                    .dropdown-divider {
+                        padding: 0;
+                        margin: 2px 10px;
                     }
                 }
             }
@@ -324,7 +358,12 @@ footer {
     margin-top: 100px !important;
     position: relative;
     // background-color: wheat;
-    background-color: #fffbf2;
+    background: linear-gradient(rgba(51, 33, 29, .9), rgba(51, 33, 29, .9)), url(../images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 100vh;
+    // background-color: #fffbf2;
     .footer-nav {
         padding: 50px 0 40px;
         .footer-logo {
@@ -339,13 +378,15 @@ footer {
                 margin-left: 30px;
                 font-weight: bold;
                 text-decoration: none !important;
+                color: whitesmoke;
                 &:hover {
                     color: $main-color;
                 }
             }
         }
         .newsletter {
-            border-top: 1px solid $second-color;
+            // border-top: 1px solid $second-color;
+            border-top: 1px solid whitesmoke;;
             color: $second-color;
             margin: auto;
             form {
@@ -353,10 +394,11 @@ footer {
                 label {
                     margin: 30px 0 16px;
                     font-weight: 600;
+                    color: whitesmoke;
                 }
                 input {
-                    // background-color: $bg-color;
-                    background-color: $main-color;
+                    background-color: $bg-color;
+                    // background-color: $main-color;
                     opacity: .6;
                     border: none;
                     border-radius: 0;
@@ -376,9 +418,13 @@ footer {
     }
     .footer-copyright-social {
         // background-color: darken($color: wheat, $amount: 5);
-        background-color: darken($color: #fffbf2, $amount: 3);
+        // background-color: darken($color: #fffbf2, $amount: 3);
+        // box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+        box-shadow: 0.5rem 0 1rem #111;
+        border-top: 1px solid #f5f5f538;
         color: $second-color;
-        padding: 30px 0;
+        color: whitesmoke;
+        padding: 15px 0;
         font-weight: 700;
        @media (max-width: 768px) {
         .copyright {
@@ -387,22 +433,44 @@ footer {
        }
         a {
             color: $second-color;
+            color: whitesmoke;
             margin: 0 5px;
             text-decoration: none;
             &:hover {
                 color: $main-color;
+                
             }
         }
     }
 }
 /* ========== End Footer ========== */
+/*============= Start Scroll To Top ===============*/
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $main-color;
+    padding: 0;
+    font-weight: normal;
+    border-radius: 2px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    animation: jamping 1s infinite alternate;
+    display: none;
+}
+/*============= End Scroll To Top ===============*/
 
 
-/* =================================
-=========== About Page =============
-/* =================================*/
+/* =====================================================================================
+    ================================ About Page ==========================================
+/* =====================================================================================*/
 
-/* ========== End Header ========== */
+/* ========== Start Header ========== */
 header {
     .about-overlay {
         background: linear-gradient(rgba(51, 33, 29, .9), rgba(51, 33, 29, .9)), url(../images/cafe-1.jpg);
@@ -455,21 +523,9 @@ header {
 /* ========== End about ========== */
 /* ========== Start Gallary ========== */
 .gallary {
-    // #image-gallery {
-    //     .modal-footer {
-    //         display: block;
-    //     }
-    // }
     .thumb {
-        // margin-top: 15px;
-        // margin-bottom: 15px;
         text-align: center;
         margin-bottom: 20px;
-        // .thumbnail {
-        //     img {
-        //         max-height: 200px;
-        //     }
-        // }
         @media (max-width: 576px) {
             .thumb {
                 margin-left: 15px;
@@ -477,7 +533,6 @@ header {
             }
         }
     }
-
     .modal {
         .modal-dialog {
             --bs-modal-width: 900px;
@@ -511,3 +566,277 @@ header {
     }
 }
 /* ========== End Gallary ========== */
+
+
+/* =====================================================================================
+    =============================== Contact Page ==========================================
+/* =====================================================================================*/
+
+/* ========== Start Contact Us  ========== */
+.contact-us {
+    .info {
+        svg {
+            color: $main-color;
+        }
+        h4 {
+            color: $second-color;
+        }
+        p {
+            color: $third-color;
+        }
+    }
+    .open-hour {
+        h3 {
+            color: $main-color;
+        }
+        h4 {
+            color: $second-color;
+        }
+    }
+    .contact-form {
+        input, textarea {
+            color: $main-color;
+            border-color: $main-color !important;
+            border-radius: 0;
+            width: 100%;
+            // padding: 15px;
+            &::placeholder {
+                color: #7d8286;
+            }
+            &:hover , &:active, &:focus &:active:focus, &:active:hover {
+                background-color: $four-color;
+                border-color: $four-color;
+            }
+        }
+    }
+}
+/* ========== End Contact Us ========== */
+
+/* =====================================================================================
+    =============================== Distributors Page ======================================
+/* =====================================================================================*/
+
+/* ========== Start Distributors ==========*/
+.distributors {
+    .distributors-box {
+        border: 1px solid #eee;
+        padding: 40px;
+        position: relative;
+        .over {
+            background-color: $second-color;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            display: block;
+            transition: all .2s ease-in-out;
+            z-index: 1;
+        }
+        &:hover {
+            .over { height: 100% }
+            .distributors-cont {
+                h3 { color: $main-color }
+                p { color: whitesmoke !important }
+                svg { opacity: 1 }
+            }
+        }
+        .distributors-cont {
+            position: relative; 
+            z-index: 2;
+            // h3 { margin-top: 20px }
+            svg {
+                position: absolute;
+                font-size: 50px;
+                line-height: 40px;
+                background-color: $second-color;
+                color: #FFF;
+                opacity: 0;
+                -webkit-transition: $main-Transition;
+                -moz-transition: $main-Transition;
+                -o-transition: $main-Transition;
+                transition: $main-Transition;
+            }
+            a {
+                &:hover {
+                    svg { background-color: $main-color }
+                }
+                &:first-of-type {
+                    svg {
+                        top: 0; 
+                        right: 0;
+                    }
+                }
+                &:nth-of-type(2) {
+                    svg {
+                        top: 50px; right: 0;
+                    }
+                }
+                &:last-of-type {
+                    svg {
+                        top: 100px; right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ========== End Distributors ========== */
+
+/* =====================================================================================
+    =============================== Product Details Page ======================================
+/* =====================================================================================*/
+
+/* ========== Start Product Header ========== */
+header.product {
+    .navbar {
+        position: static;
+        background-color: wheat;
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: #333;
+                    &.active, &:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ========== End Product Header ========== */
+/* ========== Start Product breadcrumb ========== */
+.breadcrumb.product-breadcrumb {
+    a {
+        color: $main-color;
+        &:hover {
+            color: $four-color;
+        }
+    }
+    .breadcrumb-item {
+       &::before {
+            color: #ccc;
+        }
+        font-size: 18px;
+    }
+}
+/* ========== End Product breadcrumb ========== */
+/* ========== Start Product Details ========== */
+.product-details {
+    .carousel {
+        button.carousel-control-prev, .carousel-control-next {
+            width: 8% !important;
+            opacity: .6;
+            &:hover {
+                opacity: 1;
+            }
+            svg {
+                font-size: 30px;
+                padding: 5px 10px;
+                background: $main-color;
+                color: $second-color;
+            }
+        }
+        .carousel-indicators {
+            top: -70px;
+            @media (max-width:992px) {
+                display: none;
+            }
+        }
+        .carousel-indicators [data-bs-target] {
+            width: 80px !important;
+            border-radius: 0 !important;
+            &.active {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .details-box {
+        span { color: $main-color; }
+    }
+}
+/* ========== End Product Details ========== */
+/* ========== Start Comments ========== */
+.comments {
+    .tabs-content {
+        // padding: 3rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        @media (max-width:768px) {
+            // padding: 1.3rem;
+            padding-left: 1.3rem;
+            padding-right: 1.3rem;
+        }
+        .content {
+            &:not(:first-of-type) {
+                display: none;
+            }
+            .avatar {
+                width: 80px;
+                height: 80px;
+                img { border-radius: 50%; }
+            }
+            .comment {
+                .rating {
+                    svg {
+                        color: #f8ad47;
+                    }
+                }
+                p {
+                    color: #999;
+                }
+            }
+            hr {
+                opacity: .05;
+            }
+        }
+        .addComment-show {
+            .add-rating {
+                width: 50%;
+                @media (max-width:992px) {
+                    width: 100%;
+                }
+                svg {
+                    color: #f8ad47;
+                }
+            }
+            form {
+                width: 75%;
+                @media (max-width:992px) {
+                    width: 100%;
+                }
+                input, textarea {
+                    // color: $main-color;
+                    // border-color: $main-color !important;
+                    border-radius: 0;
+                    &::placeholder {
+                        // color: #7d8286;
+                        color: #c1c1c1;
+                    }
+                    &:hover, &:active, &:focus &:active:focus, &:active:hover {
+                        // background-color: $four-color;
+                        border: 2px solid $four-color;
+                    }
+                }
+                .div-button {
+                    text-align: right;
+                }
+            }
+        }
+    }
+
+
+}
+/* ========== End Comments ========== */
+
+
+/* ========== Start Animation ========== */
+@keyframes jamping {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+/* ========== End Animation ========== */

@@ -60,6 +60,36 @@ $(function() {
         });
     }
 //========================================
+//========================================
+// Creating Dynamic Tabs
+$("#myTab li").on('click', function(e) {
+  e.preventDefault();
+  let myID = $(this).attr("id"); // Get id for li clicked
+  $(this).children().tab("show"); // Add active class and remove
+  $(".tabs-content .content").hide();  // Hide all div content
+  $("." + myID + "-show").fadeIn("1000"); // Show content 
 });
-
+//========================================
+});
+//========================================
+let scrollTop = document.querySelector(".scroll-top");
+window.onscroll =  () => {
+    // Show & Hide Scroll To Top Button On Scroll Window
+    if(window.scrollY >= 400) {
+      scrollTop.style.display = "flex"
+        // scrollTop.style.display = "none"
+    } else {
+        // scrollTop.style.display = "flex !important"
+        scrollTop.style.display = "none"
+    }
+}
+// Scroll To Top On Click 
+scrollTop.onclick = () => {
+  window.scrollTo({
+      left: 0,
+      top: 0,
+      behavior: 'smooth'
+  });
+}
+//========================================
 document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة للمتجر سنة " + new Date().getFullYear();
