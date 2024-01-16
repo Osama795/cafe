@@ -31,6 +31,7 @@ body {
 }
 
 a {text-decoration: none;}
+hr { opacity: .05; }
 /* ========== Start Global  ========== */
 .custom-btn {
     color: $third-color;
@@ -691,11 +692,13 @@ header {
 header.product {
     .navbar {
         position: static;
-        background-color: wheat;
+        // background-color: wheat;
+        background-color: $second-color;
         .navbar-nav {
             .nav-item {
                 .nav-link {
-                    color: #333;
+                    // color: #333;
+                    color: white;
                     &.active, &:hover {
                         color: $main-color;
                     }
@@ -759,11 +762,9 @@ header.product {
 /* ========== Start Comments ========== */
 .comments {
     .tabs-content {
-        // padding: 3rem;
         padding-left: 4rem;
         padding-right: 4rem;
         @media (max-width:768px) {
-            // padding: 1.3rem;
             padding-left: 1.3rem;
             padding-right: 1.3rem;
         }
@@ -777,6 +778,12 @@ header.product {
                 img { border-radius: 50%; }
             }
             .comment {
+                width: 50%;
+                @media (max-width:768px) {
+                    width: 100%;
+                }
+            }
+            .comment {
                 .rating {
                     svg {
                         color: #f8ad47;
@@ -785,9 +792,6 @@ header.product {
                 p {
                     color: #999;
                 }
-            }
-            hr {
-                opacity: .05;
             }
         }
         .addComment-show {
@@ -806,15 +810,11 @@ header.product {
                     width: 100%;
                 }
                 input, textarea {
-                    // color: $main-color;
-                    // border-color: $main-color !important;
                     border-radius: 0;
                     &::placeholder {
-                        // color: #7d8286;
                         color: #c1c1c1;
                     }
                     &:hover, &:active, &:focus &:active:focus, &:active:hover {
-                        // background-color: $four-color;
                         border: 2px solid $four-color;
                     }
                 }
@@ -824,10 +824,9 @@ header.product {
             }
         }
     }
-
-
 }
 /* ========== End Comments ========== */
+
 
 
 /* ========== Start Animation ========== */
