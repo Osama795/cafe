@@ -6,6 +6,9 @@ import "jquery/dist/jquery.min.js";
 import 'popper.js/dist/popper.min';
 import "@fortawesome/fontawesome-free/js/all.min";
 // import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.10.2/+esm';
+import Swal from 'sweetalert2';
+// or via CommonJS
+// const Swal = require('sweetalert2');
 import "../sass/style.scss";
 
 // add tooltip
@@ -115,15 +118,18 @@ reviewStars.forEach((star, index) => {
   });
 });
 //========================================
-// Swal.fire({
-//   title: "Are you sure?",
-//   text: "You won't be able to revert this!",
-//   icon: "success",
-//   showCancelButton: true,
-//   confirmButtonColor: "#3085d6",
-//   cancelButtonColor: "#d33",
-//   confirmButtonText: "Yes, delete it!"
-// });
+document.querySelector("#add-cart").onclick = () => {
+  Swal.fire({
+    title: "تم الاضافة الي عربة الشراء",
+    text: "تم الاضافة الي عربة الشراء",
+    // text: "That thing is still around?",
+    icon: "success",
+    confirmButtonColor: "#33211d",
+    confirmButtonText: "حسنا",
+    // showConfirmButton: false,
+    // timer: 2500
+  });
+}
 //========================================
 
 // add this year in footer
