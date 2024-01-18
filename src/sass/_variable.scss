@@ -3,4 +3,16 @@ $second-color:#33211d;
 $third-color:#212529;
 $four-color: #d38d3c; 
 $bg-color: #fffbf2;
-$main-Transition: 0.5s
+$main-Transition: 0.5s;
+
+$coffee-bg: #353833;
+$coffee-clr: #fff;
+
+$cappuccino-bg: #FFFBF2;
+$cappuccino-clr: $second-color;
+
+$turkishCoffee-bg: #f5d9b1;
+$turkishCoffee-clr: $second-color;
+
+$product_bgclr: (coffee: $coffee-bg, cappuccino: $cappuccino-bg, turkishCoffee: $turkishCoffee-bg);
+$product_clr: (coffee: $coffee-clr, cappuccino: $cappuccino-clr, turkishCoffee: $turkishCoffee-clr);

@@ -109,8 +109,16 @@ module.exports = {
         filename: "distributors.html"
         }),
         new HtmlWebpackPlugin({
-        template: "./src/product-details.html",
-        filename: "product-details.html"
+        template: "./src/cappuccino-details.html",
+        filename: "cappuccino-details.html"
+        }),
+        new HtmlWebpackPlugin({
+        template: "./src/coffee-details.html",
+        filename: "coffee-details.html"
+        }),
+        new HtmlWebpackPlugin({
+        template: "./src/turkishCoffee-details.html",
+        filename: "turkishCoffee-details.html"
         }),
 
         new MiniCssExtractPlugin({ filename: "css/style.css" })
