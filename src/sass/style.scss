@@ -120,6 +120,17 @@ hr { opacity: .05; }
         box-shadow: none !important;
     }
 } 
+div:where(.swal2-icon).swal2-success {
+    color: $main-color !important;
+    border-color: $main-color !important;
+}
+div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip],
+div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long] {
+    background-color: $main-color !important;
+}
+.swal2-confirm {
+    background-color: $main-color !important;
+}
 /* ========== End Global  ========== */
 
 /* =====================================================================================
@@ -254,27 +265,24 @@ header {
         transition: $main-Transition;
         height: 230px;
     }
-    // .carousel-item {
-        .card {
-            overflow: hidden;
-            background: transparent;
-            .card-body {
-                // background: transparent;
-                @include productbg;
-                .custom-btn {
-                    font-size: smaller;
-                }
-            }
-            &:hover {
-                img {
-                    -webkit-transform:scale(1.05);
-                    -moz-transform:scale(1.05);
-                    transform:scale(1.05)
-                }
+    .card {
+        overflow: hidden;
+        background: transparent;
+        .card-body {
+            // background: transparent;
+            @include productbg;
+            .custom-btn {
+                font-size: smaller;
             }
         }
-    // }
-    
+        &:hover {
+            img {
+                -webkit-transform:scale(1.05);
+                -moz-transform:scale(1.05);
+                transform:scale(1.05)
+            }
+        }
+    }    
     .carousel-indicators {
         bottom: -60px;
        & [data-bs-target] {
@@ -858,6 +866,29 @@ header.product {
     }
 }
 /* ========== End Comments ========== */
+
+
+/* =====================================================================================
+    =============================== Checkout Page ======================================
+/* =====================================================================================*/
+.shoping-cart {
+    table {
+        tr {
+            img {
+                width: 100px;
+            }
+            th {
+                color: $main-color;
+                h5 {
+                    color: #555;
+                }
+            }
+            td {
+                color: #555 !important;
+            }
+        }
+    }
+}
 
 
 

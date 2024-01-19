@@ -120,6 +120,10 @@ module.exports = {
         template: "./src/turkishCoffee-details.html",
         filename: "turkishCoffee-details.html"
         }),
+        new HtmlWebpackPlugin({
+        template: "./src/shoping-cart.html",
+        filename: "shoping-cart.html"
+        }),
 
         new MiniCssExtractPlugin({ filename: "css/style.css" })
     ],

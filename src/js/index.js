@@ -118,16 +118,22 @@ reviewStars.forEach((star, index) => {
   });
 });
 //========================================
-document.querySelector("#add-cart").onclick = () => {
-  Swal.fire({
-    title: "تم الاضافة الي عربة الشراء",
-    text: "تم الاضافة الي عربة الشراء",
-    // text: "That thing is still around?",
-    icon: "success",
-    confirmButtonColor: "#33211d",
-    confirmButtonText: "حسنا",
-    // showConfirmButton: false,
-    // timer: 2500
+// Show Message To Add To Cart Use Sweet Aleart
+let addToCart = document.querySelectorAll(".add-cart");
+if (addToCart) {
+  addToCart.forEach((btn) => {
+    btn.onclick = () => {
+      Swal.fire({
+        title: "تم الاضافة الي عربة الشراء",
+        // text: "تم الاضافة الي عربة الشراء",
+        icon: "success",
+        confirmButtonText: "حسنا",
+        // iconColor: "#33211d",
+        // confirmButtonColor: "#33211d",
+        // showConfirmButton: false,
+        // timer: 2500
+      });
+    }
   });
 }
 //========================================
