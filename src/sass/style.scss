@@ -285,10 +285,14 @@ header {
         background: transparent;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
         .card-body {
-            // background: transparent;
             @include productbg;
             .custom-btn {
                 font-size: smaller;
+            }
+            .price {
+                color: $four-color;
+                font-size: 18px;
+                font-weight: 600;
             }
         }
         &:hover {
@@ -299,18 +303,6 @@ header {
             }
         }
     }    
-    // .carousel-indicators {
-    //     bottom: -60px;
-    //    & [data-bs-target] {
-    //         width: 15px !important;
-    //         height: 15px !important;
-    //         border-radius: 50% !important;
-    //         background-color: $second-color;
-    //     }
-    //     & .active {
-    //         background-color: $main-color;
-    //     }
-    // }
 }
 /* ========== End Products ========== */
 /* ========== Start Reservation ========== */
