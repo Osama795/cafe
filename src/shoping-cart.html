@@ -11,7 +11,6 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./images/logo-coffee2.png" alt="logo"> كافية</a>
-              <!-- <a class="navbar-brand" href=""><i class="fa-solid fa-mug-hot" style="font-size: 40px;"></i> كافية</a> -->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
               </button>
@@ -65,14 +64,14 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
+                          <tr data-product-info data-product-price="90">
                             <th scope="row">
                                 <div class="custom-media d-flex gap-3">
                                     <img src="./images/Cappuccino-1.jpg" alt="Cappuccino" class="d-none d-md-block img-fluid" />
                                     <h5>كبتشينو</h5>
                                 </div>
                             </th>
-                            <td>200$</td>
+                            <td>90$</td>
                             <td>
                                 <select name="product1" class="custom-form-control qunatity" id="product-quantity" data-product-quantity>
                                     <option value="1" selected>1</option>
@@ -80,23 +79,23 @@
                                     <option value="3">3</option>
                                 </select>
                             </td>
-                            <td>200$</td>
+                            <td class="total-price-for-product">90$</td>
                             <td>
-                                <button class="btn btn-danger" data-remove-from-card>
+                                <button class="btn btn-danger del" data-remove-from-card>
                                     <i class="far fa-trash-alt d-md-none d-block"></i>
                                     <span class="d-none d-md-block">حذف</span>
                                 </button>
                             </td>
                           </tr>
 
-                          <tr>
+                          <tr data-product-info data-product-price="50">
                             <th scope="row">
                                 <div class="custom-media d-flex gap-3">
                                     <img src="./images/coffee-2.jpg" alt="Cappuccino" class="d-none d-md-block img-fluid" />
                                     <h5>القهوة</h5>
                                 </div>
                             </th>
-                            <td>90$</td>
+                            <td>50$</td>
                             <td>
                                 <select name="product1" class="custom-form-control qunatity" id="product-quantity" data-product-quantity>
                                     <option value="1" selected>1</option>
@@ -104,23 +103,23 @@
                                     <option value="3">3</option>
                                 </select>
                             </td>
-                            <td>90$</td>
-                            <td>
-                                <button class="btn btn-danger" data-remove-from-card>
+                            <td class="total-price-for-product">50$</td>
+                            <td >
+                                <button class="btn btn-danger del" data-remove-from-card>
                                     <i class="far fa-trash-alt d-md-none d-block"></i>
                                     <span class="d-none d-md-block">حذف</span>
                                 </button>
                             </td>
                           </tr>
 
-                          <tr>
+                          <tr data-product-info data-product-price="70">
                             <th scope="row">
                                 <div class="d-flex gap-3">
                                     <img src="./images/Turkish-1.jpg" alt="Cappuccino" class="d-none d-md-block img-fluid" />
                                     <h5>القهوة التركية</h5>
                                 </div>
                             </th>
-                            <td>100$</td>
+                            <td>70$</td>
                             <td>
                                 <select name="product1" class="custom-form-control qunatity" id="product-quantity" data-product-quantity>
                                     <option value="1" selected>1</option>
@@ -128,9 +127,9 @@
                                     <option value="3">3</option>
                                 </select>
                             </td>
-                            <td>100$</td>
+                            <td class="total-price-for-product">70$</td>
                             <td>
-                                <button class="btn btn-danger" data-remove-from-card>
+                                <button class="btn btn-danger del" data-remove-from-card>
                                     <i class="far fa-trash-alt d-md-none d-block"></i>
                                     <span class="d-none d-md-block">حذف</span>
                                 </button>
@@ -139,6 +138,9 @@
 
                         </tbody>
                     </table>
+                    <div class="p-3 fs-4">
+                        <span>السعر الإجمالي</span> : <span id="total-price-for-all-product" style="color: #dda265;">210$</span>
+                    </div>
                 </form>
             </div>
          </section>
