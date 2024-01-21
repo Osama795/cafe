@@ -3,20 +3,20 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
 module.exports = {
-    devServer: {
-        static: {
-          directory: path.join(__dirname, ' build'),
-        },
-        // compress: true,
-        port: 9000,
-        open: true,
-        devMiddleware: {
-          writeToDisk: true,
-        },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'public'),
     },
-    entry: "./src/js/index.js", 
+    port: 9000,
+    open: true,
+    devMiddleware: {
+      writeToDisk: true,
+    },
+  },
+    entry: {
+      app: "./src/js/index.js"
+    },
     output: {
-        publicPath: '/',
         path: path.resolve(__dirname, 'build'),
         filename: 'js/bundle.js',
     },
