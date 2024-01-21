@@ -13,6 +13,19 @@ document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(item => new boot
 
 $(function() {
 //========================================
+window.onload =  () => {
+  // $(window).load(function () {
+    // Loading Elements
+    $('.loading-overlay div').fadeOut(3000, function() {
+      // Show Scroll For Body
+      $('body').css('overflow', 'auto');
+      $(this).parent().fadeOut(1000, function() {
+          $(this).remove();
+      });
+    });
+  // });
+}
+//========================================
 // gallery
 loadGallery(true, 'a.thumbnail');
 
@@ -134,7 +147,7 @@ if (addToCart) {
   });
 }
 //========================================
-// حساب سعر أجمالي المنتج
+// Calculate the price of the total product
 document.querySelectorAll('[data-product-quantity]').forEach(item => {
   item.addEventListener('change', () => {
       const newQuantity = item.value;
@@ -147,7 +160,6 @@ document.querySelectorAll('[data-product-quantity]').forEach(item => {
   });
 });
 
-// دالة لحساب السعر الإجمالي لجميع المنتجات 
 // Calculation function for all products
 function calculateTotalPrice() {
   let totalPriceForAllProduct = 0;
@@ -168,5 +180,5 @@ document.querySelectorAll('[data-remove-from-card]').forEach(item => {
 });
 //========================================
 
-// add this year in footer
+// Add this year in footer
 document.getElementById("copyright").innerHTML = "جميع الحقوق محفوظة للمتجر سنة " + new Date().getFullYear();

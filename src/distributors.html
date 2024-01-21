@@ -6,6 +6,13 @@
     <title>كافية | الموزعين</title>
 </head>
 <body>
+    <!--------------------- Start Loading ---------------------->
+    <div class="loading-overlay">
+        <div class="spinner1"><i class="fa-solid fa-mug-hot"></i></div>
+        <div class="spinner2"><i class="fa-solid fa-mug-hot"></i></div>
+        <div class="spinner3"><i class="fa-solid fa-mug-hot"></i></div>
+    </div>
+    <!--------------------- End Loading ---------------------->
     <!--------------------- Start Header---------------------->
     <header>
         <nav class="navbar navbar-expand-lg">
@@ -61,14 +68,26 @@
     <!--------------------- End Header---------------------->
     <main>
         <!--------------------- Start Google Map ---------------------->
-        <div class="map p-0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.128056977985!2d32.537871900000006!3d15.584805500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e91df8c85ef7d%3A0xe308a26e427774dd!2sOzone!5e0!3m2!1sar!2s!4v1705256094685!5m2!1sar!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map p-0 m-0">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3843.128056977985!2d32.537871900000006!3d15.584805500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e91df8c85ef7d%3A0xe308a26e427774dd!2sOzone!5e0!3m2!1sar!2s!4v1705256094685!5m2!1sar!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25451.943067072072!2d32.476828959403946!3d15.724712016648303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e8fde9837cabf%3A0x191f55de7e67db40!2z2KfZhNiu2LHYt9mI2YXYjCDYp9mE2LPZiNiv2KfZhg!5e0!3m2!1sar!2s!4v1705830642256!5m2!1sar!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122937.36862226507!2d32.693190745562624!3d15.656019886530332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e8fde9837cabf%3A0x191f55de7e67db40!2z2KfZhNiu2LHYt9mI2YXYjCDYp9mE2LPZiNiv2KfZhg!5e0!3m2!1sar!2s!4v1705830685945!5m2!1sar!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--------------------- End Google Map ---------------------->
         <!--------------------- Start Distributors ---------------------->
         <section class="distributors py-5 text-center">
             <div class="container">
-                <h2 class="main-title">الموزعين</h2>
+                <!-- <h2 class="main-title">الموزعين</h2> -->
                 <div class="row">
                     <div class="col-md-4 distributors-box">
                         <span class="over"></span>
@@ -149,7 +168,6 @@
     </main>
     <!--------------------- Start Footer---------------------->
     <footer>
-      <!-- <div class="overlay"></div> -->
         <div class="footer-nav text-center">
           <div class="container">
             <div class="footer-logo"><a href="./"><img src="./images/logo-coffee2.png" alt="logo"></a></div>
@@ -169,21 +187,21 @@
                 </form>
             </div>
           </div>
-      </div>
-      <div class="footer-copyright-social">
-        <div class="container">
-          <div class="d-block d-md-flex justify-content-between align-items-center text-center">
-              <div id="copyright" class="copyright">
-                  <!-- جميع الحقوق محفوظة للمتجر لسنة 2023 -->
-              </div>
-              <div id="social-icons" class="">
-                  <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-                  <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-                  <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-              </div>
-          </div>
         </div>
-      </div> 
+        <div class="footer-copyright-social">
+            <div class="container">
+            <div class="d-block d-md-flex justify-content-between align-items-center text-center">
+                <div id="copyright" class="copyright">
+                    <!-- جميع الحقوق محفوظة للمتجر لسنة 2023 -->
+                </div>
+                <div id="social-icons" class="">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+            </div>
+        </div> 
     </footer>
     <!--------------------- End Footer---------------------->
 
