@@ -16,7 +16,7 @@ $(function() {
 window.onload =  () => {
   // $(window).load(function () {
     // Loading Elements
-    $('.loading-overlay div').fadeOut(1000, function() {
+    $('.loading-overlay div').fadeOut(1500, function() {
       // Show Scroll For Body
       $('body').css('overflow', 'auto');
       $(this).parent().fadeOut(1000, function() {
