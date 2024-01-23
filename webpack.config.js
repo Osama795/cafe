@@ -38,8 +38,9 @@ module.exports = {
             "sass-loader",
             ],
         },
+        
         {
-            test: /\.(png|jpe?g|gif)$/i,
+            test: /\.(webp|png|jpe?g|gif)$/i,
             use: [
               {
                 loader: 'file-loader',

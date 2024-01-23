@@ -14,16 +14,14 @@ document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(item => new boot
 $(function() {
 //========================================
 window.onload =  () => {
-  // $(window).load(function () {
     // Loading Elements
-    $('.loading-overlay div').fadeOut(1500, function() {
+    $('.loading-overlay div').fadeOut(300, function() {
       // Show Scroll For Body
       $('body').css('overflow', 'auto');
-      $(this).parent().fadeOut(1000, function() {
+      $(this).parent().fadeOut(300, function() {
           $(this).remove();
       });
     });
-  // });
 }
 //========================================
 // gallery
@@ -135,13 +133,8 @@ if (addToCart) {
     btn.onclick = () => {
       Swal.fire({
         title: "تم الاضافة الي عربة الشراء",
-        // text: "تم الاضافة الي عربة الشراء",
         icon: "success",
         confirmButtonText: "حسنا",
-        // iconColor: "#33211d",
-        // confirmButtonColor: "#33211d",
-        // showConfirmButton: false,
-        // timer: 2500
       });
     }
   });
