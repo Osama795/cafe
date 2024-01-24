@@ -1,10 +1,6 @@
 @import './_variable.scss';
 @import './_mixin.scss';
 
-// @font-face {
-//     font-family: "cairoFont";
-//     src: url(../fonts/Cairo-Regular.ttf);
-// }
 @font-face {
     font-family: "TajawalFont";
     src: url(../fonts/Tajawal-Regular.ttf);
@@ -26,9 +22,7 @@
 }
 
 body {
-    // font-family: "cairoFont", 'Cambria, Cochin, Georgia, Times, Times New Roman, serif' !important;
     font-family: "TajawalFont", 'Cambria, Cochin, Georgia, Times, Times New Roman, serif' !important;
-    // @include productbg("coffee", white, $main-color);
     @include productbg;
 }
 
@@ -259,7 +253,7 @@ header {
     .landing {
         .carousel {
             img {
-                height: calc(100vh - 0px);
+                height: 100vh
             }
             .carousel-item {
                 .carousel-caption {
@@ -269,6 +263,19 @@ header {
                     color: #fff;
                     text-align: center;
                     height: 100%;
+                    h1 {
+                        @media (max-width:768px) {
+                            font-size: 25px;
+                        }
+                    }
+                    h2 {
+                        @media (max-width:768px) {
+                            font-size: 20px;
+                        }
+                        @media (max-width:500px) {
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
         }
@@ -332,7 +339,7 @@ header {
 /* ========== End Products ========== */
 /* ========== Start Reservation ========== */
 .reservation {
-    background: linear-gradient(rgba(51, 33, 29, .9), rgba(51, 33, 29, .9)), url(../images/bg.jpg);
+    background: linear-gradient(rgba(51, 33, 29, .9), rgba(51, 33, 29, .9)), url(../images/bg.webp);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -399,7 +406,7 @@ header {
 footer {
     margin-top: 100px !important;
     position: relative;
-    background: linear-gradient(rgb(169, 150, 116), rgba(78, 53, 47, 0.9), rgba(51, 33, 29, .9), rgba(51, 33, 29, .9)), url(../images/bg.jpg);
+    background: linear-gradient(rgb(169, 150, 116), rgba(78, 53, 47, 0.9), rgba(51, 33, 29, .9), rgba(51, 33, 29, .9)), url(../images/bg.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -512,7 +519,7 @@ footer {
 /* ========== Start Header ========== */
 header {
     .about-overlay {
-        background: linear-gradient(rgba(51, 33, 29, .9), rgba(51, 33, 29, .9)), url(../images/cafe-1.jpg);
+        background: linear-gradient(rgba(51, 33, 29, .9), rgba(51, 33, 29, .9)), url(../images/cafe-1.webp);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
