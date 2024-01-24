@@ -253,7 +253,10 @@ header {
     .landing {
         .carousel {
             img {
-                height: 100vh
+                height: 100vh;
+                @media (max-width:768px) {
+                    max-height: 500px;
+                }
             }
             .carousel-item {
                 .carousel-caption {
@@ -268,12 +271,13 @@ header {
                             font-size: 25px;
                         }
                     }
-                    h2 {
+                    p {
+                        font-size: 25px;
                         @media (max-width:768px) {
-                            font-size: 20px;
+                            font-size: 16px;
                         }
                         @media (max-width:500px) {
-                            font-size: 16px;
+                            font-size: 14px;
                         }
                     }
                 }
